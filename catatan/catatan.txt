@@ -1,0 +1,2 @@
+untuk terakhir update 
+--buatkan cara menghandle ketika user tidak login tidak register namun langsung pindah ke url app itu akan mental kembali ke url login
