@@ -15,7 +15,7 @@ const MostCard = (props) => {
   };
   return (
     <div className="snap-center snap-always">
-      <div className=" w-64 h-72 bg-white/70 flex flex-col justify-center items-center gap-2 rounded-md overflow-hidden lg:w-80 lg:h-96">
+      <div className=" w-64 h-72 bg-blue-700 flex flex-col justify-center items-center gap-2 rounded-md overflow-hidden lg:w-80 lg:h-96">
         <div
           className="relative w-full h-3/5 bg-cover bg-center"
           style={{ backgroundImage: `url(${bgDestination})` }}
@@ -38,23 +38,23 @@ const MostCard = (props) => {
         <div className="w-full flex justify-between px-2 py-2 border-2 divide-x-2">
           <div className="w-full flex justify-between px-2">
             <div className=" flex gap-2 self-center">
-              <a href="" className="text-xs self-center text-black/50">
+              <a href="" className="text-xs self-center text-white">
                 get
               </a>
-              <a href="" className="text-xs self-center text-black/50">
+              <a href="" className="text-xs self-center text-white">
                 about
               </a>
-              <a href="" className="text-xs self-center text-black/50">
+              <a href="" className="text-xs self-center text-white">
                 check
               </a>
             </div>
-            <div className="flex self-center text-black/50">
+            <div className="flex self-center text-white">
               <IoArrowRedoCircleOutline />
             </div>
           </div>
           <button
             onClick={handleClickStar}
-            className="flex self-center text-black/50 gap-2 pl-2 "
+            className="flex self-center text-white gap-2 pl-2 "
           >
             {star ? <IoStarOutline /> : <IoStar className="text-blue-500" />}
           </button>

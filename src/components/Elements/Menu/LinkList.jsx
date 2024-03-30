@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const LinkList = (props) => {
-  const { children, list, width } = props;
+  const { children, list, translate } = props;
   const [menu, setMenu] = useState(false);
 
   const handleEnter = () => {
@@ -23,7 +23,7 @@ const LinkList = (props) => {
       {children}
       {menu && (
         <div
-          className={`w-[${width}] absolute top-6 bg-white text-slate-400 -translate-x-9 rounded-md`}
+          className={`absolute top-6 bg-white text-slate-400 ${translate} rounded-md`}
         >
           {list}
         </div>
